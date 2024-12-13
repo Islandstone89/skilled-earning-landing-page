@@ -23,6 +23,12 @@
     max-width: 100%;
     height: auto;
   }
+
+  /* Remove default link styles */
+  a {
+    text-decoration: none;
+    color: currentColor;
+  }
   
   /* 6. Inherit fonts for form controls */
   input, button, textarea, select {
