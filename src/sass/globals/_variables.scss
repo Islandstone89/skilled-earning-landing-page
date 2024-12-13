@@ -1,0 +1,99 @@
+/* CUSTOM PROPERTIES */
+
+:root {
+
+    /* Primitive properties */
+
+    /* COLORS */
+
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grey: hsl(232, 10%, 56%);
+    --clr-pink-light:hsl(341, 100%, 83%);
+    --clr-pink: hsl(341, 92%, 62%);
+    --clr-blue-saturated: hsl(234, 25%, 52%);
+    --clr-blue-dark: hsl(233, 54%, 16%);
+
+    --clr-orange: hsl(13, 100%, 64%);
+    --clr-pink-dark: hsl(322, 87%, 55%);
+    --clr-blue: hsl(237, 100%, 64%);
+
+    /* TYPOGRAPHY */
+
+    --ff-sans-serif: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-800: 800;
+
+    --fs-16px: 1rem;
+    --fs-18px: 1.125rem;
+    --fs-20px: 1.25rem;
+    --fs-24px: 1.5rem;
+    --fs-32px: 2rem;
+    --fs-40px: 2.5rem;
+    --fs-56px: 3.5rem;
+
+    --size-8px: 8px;
+    --size-12px: 12px;
+    --size-16px: 16px;
+    --size-20px: 20px;
+    --size-24px: 24px;
+    --size-32px: 32px;
+    --size-40px: 40px;
+    --size-44px: 44px;
+    --size-48px: 48px;
+    --size-56px: 56px;
+    --size-64px: 64px;
+    --size-80px: 80px;
+    --size-128px: 128px;
+    --size-144px: 144px;
+
+    /* Semantic properties */
+
+    /* COLORS */
+
+    --clr-primary-100: var(--clr-white);
+    --clr-primary-200: var(--clr-grey);
+    --clr-primary-300: var(--clr-blue-dark);
+
+    --clr-neutral-100: var(--clr-blue-saturated);
+
+    --clr-accent-100: var(--clr-pink-light);
+    --clr-accent-200: var(--clr-pink);
+    --clr-accent-300: var(--clr-pink-dark);
+    --clr-accent-400: var(--clr-orange);
+    --clr-accent-500: var(--clr-blue);
+
+    /* TYPOGRAPHY */
+
+    --ff-primary: var(--ff-sans-serif);
+
+    --fw-regular: var(--fw-400);
+    --fw-medium: var(--fw-500);
+    --fw-bold: var(--fw-700);
+    --fw-extra-bold: var(--fw-800);
+
+    --fs-200: var(--fs-16px);
+    --fs-225: var(--fs-18px);
+    --fs-250: var(--fs-20px);
+    --fs-300: var(--fs-24px);
+    --fs-400: var(--fs-32px);
+    --fs-500: var(--fs-40px);
+    --fs-700: var(--fs-56px);
+
+    --size-100: var(--size-8px);
+    --size-150: var(--size-12px);
+    --size-200: var(--size-16px);
+    --size-250: var(--size-20px);
+    --size-300: var(--size-24px);
+    --size-400: var(--size-32px);
+    --size-500: var(--size-40px);
+    --size-550: var(--size-44px);
+    --size-600: var(--size-48px);
+    --size-700: var(--size-56px);
+    --size-800: var(--size-64px);
+    --size-1000: var(--size-80px);
+    --size-1600: var(--size-128px);
+    --size-1800: var(--size-144px);
+}
