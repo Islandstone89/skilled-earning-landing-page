@@ -1,0 +1,10 @@
+
+.header-btn-link {
+    background-color: var(--clr-primary-300);
+    color: var(--clr-primary-100);
+    
+
+    &:is(:hover, :focus-visible) {
+        background-color: var(--clr-neutral-100);
+    }
+}

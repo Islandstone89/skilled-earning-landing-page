@@ -3,4 +3,19 @@
 body {
     background-color: var(--clr-primary-100);
     font-family: var(--ff-primary);
+    font-size: var(--fs-225);
+    font-weight: var(--fw-bold);
+}
+
+.heading {
+    font-weight: var(--fw-extra-bold);
+}
+
+.btn-link {
+    color: var(--clr-primary-100);
+    border-radius: 28px;
+    padding-block: var(--size-200);
+    padding-inline: var(--size-400);
+    transition: 250ms ease-in-out;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0 / .25)
 }

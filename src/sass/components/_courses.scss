@@ -1,0 +1,8 @@
+
+.courses__heading {
+    font-size: clamp(var(--fs-300), 1.3rem + 0.83vw, var(--fs-400));
+}
+
+.course__heading {
+    font-size: clamp(var(--fs-250), 1.16rem + 0.41vw, var(--fs-300));
+}
