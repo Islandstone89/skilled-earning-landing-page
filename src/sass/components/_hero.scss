@@ -1,8 +1,15 @@
 
 .hero {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
+    gap: var(--size-600);
+    padding-block: var(--size-600);
+
+    @media (width > 45rem) {
+        grid-template-columns: 1fr 1fr;
+        padding-block: var(--size-800);
+    }
 }
 
 .hero__heading {
@@ -16,4 +23,8 @@
 .hero-btn-link {
     --flow-space: var(--size-500);
     background: linear-gradient(180deg, var(--clr-accent-500), var(--clr-accent-300));
+
+    &:is(:hover, :focus-visible) {
+        opacity: .5;
+    }
 }

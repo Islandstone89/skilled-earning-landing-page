@@ -205,8 +205,8 @@ body {
 .btn-link {
   color: var(--clr-primary-100);
   border-radius: 28px;
-  padding-block: var(--size-200);
-  padding-inline: var(--size-400);
+  padding-block: var(--size-150);
+  padding-inline: var(--size-300);
   transition: 250ms ease-in-out;
   box-shadow: 0 4px 4px 0 rgb(0, 0, 0);
 }
@@ -229,8 +229,16 @@ body {
 
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
+  gap: var(--size-600);
+  padding-block: var(--size-600);
+}
+@media (width > 45rem) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    padding-block: var(--size-800);
+  }
 }
 
 .hero__heading {
@@ -244,6 +252,9 @@ body {
 .hero-btn-link {
   --flow-space: var(--size-500);
   background: linear-gradient(180deg, var(--clr-accent-500), var(--clr-accent-300));
+}
+.hero-btn-link:is(:hover, :focus-visible) {
+  opacity: 0.5;
 }
 
 .courses {
@@ -309,6 +320,9 @@ body {
 
 .footer-btn-link {
   background: linear-gradient(180deg, var(--clr-accent-700), var(--clr-accent-300));
+}
+.footer-btn-link:is(:hover, :focus-visible) {
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */
