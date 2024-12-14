@@ -88,8 +88,9 @@ h1, h2, h3, h4, h5, h6 {
 :root {
   /* Primitive properties */
   /* COLORS */
+  --clr-light: hsl(240, 90%, 98%);
   --clr-white: hsl(0, 0%, 100%);
-  --clr-grey: hsl(232, 10%, 56%);
+  --clr-grey: hsl(232, 20%, 45%);
   --clr-pink-light:hsl(341, 100%, 83%);
   --clr-pink: hsl(341, 92%, 62%);
   --clr-blue-saturated: hsl(234, 25%, 52%);
@@ -97,6 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   --clr-orange: hsl(13, 100%, 64%);
   --clr-pink-dark: hsl(322, 87%, 55%);
   --clr-blue: hsl(237, 100%, 64%);
+  --clr-pink-dark2: hsl(322, 97%, 35%);
   /* TYPOGRAPHY */
   --ff-sans-serif: "Plus Jakarta Sans", system-ui, sans-serif;
   --fw-400: 400;
@@ -127,15 +129,16 @@ h1, h2, h3, h4, h5, h6 {
   --size-144px: 144px;
   /* Semantic properties */
   /* COLORS */
-  --clr-primary-100: var(--clr-white);
-  --clr-primary-200: var(--clr-grey);
-  --clr-primary-300: var(--clr-blue-dark);
-  --clr-neutral-100: var(--clr-blue-saturated);
+  --clr-primary-100: var(--clr-light);
+  --clr-primary-200: var(--clr-white);
+  --clr-primary-300: var(--clr-grey);
+  --clr-primary-400: var(--clr-blue-dark);
   --clr-accent-100: var(--clr-pink-light);
   --clr-accent-200: var(--clr-pink);
   --clr-accent-300: var(--clr-pink-dark);
   --clr-accent-400: var(--clr-orange);
-  --clr-accent-500: var(--clr-blue);
+  --clr-accent-500: var(--clr-blue-saturated);
+  --clr-accent-600: var(--clr-blue);
   /* TYPOGRAPHY */
   --ff-primary: var(--ff-sans-serif);
   --fw-regular: var(--fw-400);
@@ -166,9 +169,28 @@ h1, h2, h3, h4, h5, h6 {
   --size-1800: var(--size-144px);
 }
 
+/* UTILITIES */
+.visually-hidden {
+  clip-path: inset(50%);
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+}
+
+.flow {
+  --flow-space: var(--size-300);
+}
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+
 /* BASE STYLES */
 body {
   background-color: var(--clr-primary-100);
+  color: var(--clr-primary-300);
   font-family: var(--ff-primary);
   font-size: var(--fs-225);
   font-weight: var(--fw-bold);
@@ -176,6 +198,7 @@ body {
 
 .heading {
   font-weight: var(--fw-extra-bold);
+  color: var(--clr-primary-400);
 }
 
 .btn-link {
@@ -187,12 +210,26 @@ body {
   box-shadow: 0 4px 4px 0 rgb(0, 0, 0);
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  padding-block: var(--size-300);
+}
+
 .header-btn-link {
-  background-color: var(--clr-primary-300);
-  color: var(--clr-primary-100);
+  background-color: var(--clr-primary-400);
+  color: var(--clr-primary-200);
 }
 .header-btn-link:is(:hover, :focus-visible) {
-  background-color: var(--clr-neutral-100);
+  background-color: var(--clr-accent-500);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .hero__heading {
@@ -204,19 +241,62 @@ body {
 }
 
 .hero-btn-link {
+  --flow-space: var(--size-500);
   background: linear-gradient(180deg, var(--clr-accent-400), var(--clr-accent-300));
+}
+
+.courses {
+  --column-gap: var(--size-400);
+  --row-gap: var(--size-400);
+  --min-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--min-width), 100%), 1fr));
+  column-gap: var(--column-gap);
+  row-gap: var(--row-gap);
+  padding-block-start: var(--size-800);
+  padding-block-end: var(--size-1000);
 }
 
 .courses__heading {
   font-size: clamp(var(--fs-300), 1.3rem + 0.83vw, var(--fs-400));
+  background: linear-gradient(180deg, var(--clr-accent-400), var(--clr-accent-300));
+  color: var(--clr-primary-100);
+  padding-block-start: var(--size-800);
+  padding-inline: var(--size-400);
+  border-radius: 15px;
+}
+
+.course {
+  padding-block-end: var(--size-500);
+  padding-inline: var(--size-400);
+  border-radius: 15px;
+  background-color: var(--clr-primary-200);
+}
+
+.course__icon-wrapper {
+  transform: translateY(-50%);
 }
 
 .course__heading {
   font-size: clamp(var(--fs-250), 1.16rem + 0.41vw, var(--fs-300));
 }
 
+.link {
+  color: var(--clr-pink-dark2);
+  color: var(--clr-accent-600);
+}
+
+.footer {
+  background-color: var(--clr-primary-400);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  padding-block: var(--size-300);
+}
+
 .footer-btn-link {
-  background: linear-gradient(180deg, var(--clr-accent-500), var(--clr-accent-300));
+  background: linear-gradient(180deg, var(--clr-accent-600), var(--clr-accent-300));
 }
 
 /*# sourceMappingURL=style.css.map */

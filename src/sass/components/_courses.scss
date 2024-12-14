@@ -1,8 +1,41 @@
 
+.courses {
+    --column-gap: var(--size-400);
+    --row-gap: var(--size-400);
+    --min-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--min-width), 100%), 1fr));
+    column-gap: var(--column-gap);
+    row-gap: var(--row-gap);
+    padding-block-start: var(--size-800);
+    padding-block-end: var(--size-1000);
+}
+
 .courses__heading {
     font-size: clamp(var(--fs-300), 1.3rem + 0.83vw, var(--fs-400));
+    background: linear-gradient(180deg, var(--clr-accent-400), var(--clr-accent-300));
+    color: var(--clr-primary-100);
+    padding-block-start: var(--size-800);
+    padding-inline: var(--size-400);
+    border-radius: 15px;
+}
+
+.course {
+    padding-block-end: var(--size-500);
+    padding-inline: var(--size-400);
+    border-radius: 15px;
+    background-color: var(--clr-primary-200);
+}
+
+.course__icon-wrapper {
+    transform: translateY(-50%);
 }
 
 .course__heading {
     font-size: clamp(var(--fs-250), 1.16rem + 0.41vw, var(--fs-300));
+}
+
+.link {
+    color: var(--clr-pink-dark2);
+    color: var(--clr-accent-600);
 }

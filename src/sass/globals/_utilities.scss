@@ -1,0 +1,19 @@
+
+/* UTILITIES */
+
+.visually-hidden {
+    clip-path: inset(50%);
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+}
+
+.flow {
+    --flow-space: var(--size-300);
+}
+
+.flow > * + * {
+    margin-block-start: var(--flow-space, 1em);
+}

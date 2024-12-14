@@ -1,4 +1,13 @@
 
+.footer {
+    background-color: var(--clr-primary-400);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    padding-block: var(--size-300);
+}
+
 .footer-btn-link {
-    background: linear-gradient(180deg, var(--clr-accent-500), var(--clr-accent-300));
+    background: linear-gradient(180deg, var(--clr-accent-600), var(--clr-accent-300));
 }

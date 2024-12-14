@@ -18,48 +18,93 @@
   <main class="main">
 
     <section class="hero" aria-labelledby="heroHeading">
-      <div class="hero__text">
+
+      <div class="hero__text flow">
         <h1 class="heading hero__heading" id="heroHeading">Maximize skill, minimize budget</h1>
         <p class="hero__tagline">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
         <a href="#" class="btn-link hero-btn-link">Get Started</a>
       </div><!-- end hero__text -->
 
-      <div class="hero__image-wrapper">
-        <img src="assets/image-hero-mobile.webp" alt="" class="hero__image">
-      </div><!-- end hero__image-wrapper -->
+     
+        <picture class="hero__image-wrapper">
+          <source srcset="assets/image-hero-desktop.webp" media="(min-width: 40rem)" />
+          <img src="assets/image-hero-mobile.webp" alt="" class="hero__image">
+        </picture><!-- end hero__image-wrapper -->
+
     </section><!-- end hero -->
 
     <section class="courses" aria-labelledby="coursesHeading">
+
       <h2 class="heading courses__heading" id="coursesHeading">Check out our most popular courses!</h2>
 
       <div class="course">
-        <h3 class="heading course__heading">Animation</h3>
-        <p class="course__text">Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
-        <a href="" class="link">Get Started</a>
+
+        <div class="course__icon-wrapper">
+          <img src="assets/icon-animation.svg" alt="">
+        </div><!-- end course__icon-wrapper-->
+
+        <div class="course__text flow">
+          <h3 class="heading course__heading">Animation</h3>
+          <p class="course__info">Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+          <a href="" class="link">Get Started</a>
+        </div><!-- end course__text -->
+
       </div><!-- end course -->
 
       <div class="course">
-        <h3 class="heading course__heading">Design</h3>
-        <p class="course__text">Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
-        <a href="" class="link">Get Started</a>
+
+        <div class="course__icon-wrapper">
+          <img src="assets/icon-design.svg" alt="">
+        </div><!-- end course__icon-wrapper-->
+
+        <div class="course__text flow">
+          <h3 class="heading course__heading">Design</h3>
+          <p class="course__info">Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
+          <a href="" class="link">Get Started</a>
+        </div><!-- end course__text -->
+
       </div><!-- end course -->
 
       <div class="course">
-        <h3 class="heading course__heading">Photography</h3>
-        <p class="course__text">Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
-        <a href="" class="link">Get Started</a>
+
+        <div class="course__icon-wrapper">
+          <img src="assets/icon-photography.svg" alt="">
+        </div><!-- end course__icon-wrapper-->
+
+        <div class="course__text flow">
+          <h3 class="heading course__heading">Photography</h3>
+          <p class="course__info">Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
+          <a href="" class="link">Get Started</a>
+        </div><!-- end course__text -->
+
       </div><!-- end course -->
 
       <div class="course">
-        <h3 class="heading course__heading">Crypto</h3>
-        <p class="course__text">All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
-        <a href="" class="link">Get Started</a>
-      </div><!-- end course -->
 
+        <div class="course__icon-wrapper">
+          <img src="assets/icon-crypto.svg" alt="">
+        </div><!-- end course__icon-wrapper-->
+
+        <div class="course__text flow">
+          <h3 class="heading course__heading">Crypto</h3>
+          <p class="course__info">All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
+          <a href="" class="link">Get Started</a>
+        </div><!-- end course__text -->
+
+      </div><!-- end course -->
+      
       <div class="course">
-        <h3 class="heading course__heading">Business</h3>
-        <p class="course__text">A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
-        <a href="" class="link">Get Started</a>
+
+        <div class="course__icon-wrapper">
+          <img src="assets/icon-business.svg" alt="">
+        </div><!-- end course__icon-wrapper-->
+
+        <div class="course__text flow">
+          <h3 class="heading course__heading">Business</h3>
+          <p class="course__info">A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
+          <a href="" class="link">Get Started</a>
+        </div><!-- end course__text -->
+
       </div><!-- end course -->
 
     </section><!-- end courses -->

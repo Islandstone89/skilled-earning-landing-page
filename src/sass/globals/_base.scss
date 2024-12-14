@@ -2,6 +2,7 @@
 
 body {
     background-color: var(--clr-primary-100);
+    color: var(--clr-primary-300);
     font-family: var(--ff-primary);
     font-size: var(--fs-225);
     font-weight: var(--fw-bold);
@@ -9,6 +10,7 @@ body {
 
 .heading {
     font-weight: var(--fw-extra-bold);
+    color: var(--clr-primary-400);
 }
 
 .btn-link {
