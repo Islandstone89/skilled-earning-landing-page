@@ -292,6 +292,10 @@ body {
 
 .link {
   color: var(--clr-accent-400);
+  transition: 250ms ease-in-out;
+}
+.link:is(:hover, :focus-visible) {
+  opacity: 0.75;
 }
 
 .footer {

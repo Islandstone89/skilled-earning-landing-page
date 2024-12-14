@@ -45,4 +45,9 @@
 
 .link {
     color: var(--clr-accent-400);
+    transition: 250ms ease-in-out;
+
+    &:is(:hover, :focus-visible) {
+        opacity: .75;
+    }
 }
