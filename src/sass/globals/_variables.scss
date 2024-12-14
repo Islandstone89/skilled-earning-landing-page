@@ -10,16 +10,19 @@
     --clr-light: hsl(240, 90%, 98%);
     --clr-white: hsl(0, 0%, 100%);
     --clr-grey: hsl(232, 20%, 45%);
-    --clr-pink-light:hsl(341, 100%, 83%);
-    --clr-pink: hsl(341, 92%, 62%);
+    --clr-pink-100:hsl(341, 100%, 83%);
+    --clr-pink-200: hsl(341, 92%, 62%);
+    --clr-pink-300: hsl(322, 87%, 55%);
+    --clr-pink-400: hsl(322, 85%, 40%);
+
     --clr-blue-saturated: hsl(234, 25%, 52%);
-    --clr-blue-dark: hsl(233, 54%, 16%);
-
-    --clr-orange: hsl(13, 100%, 64%);
-    --clr-pink-dark: hsl(322, 87%, 55%);
     --clr-blue: hsl(237, 100%, 64%);
+    --clr-blue-dark: hsl(233, 54%, 16%);
+    --clr-orange: hsl(13, 100%, 64%);
+    
+    
 
-    --clr-pink-dark2: hsl(322, 97%, 35%);
+    
 
     /* TYPOGRAPHY */
 
@@ -65,12 +68,13 @@
     --clr-primary-300: var(--clr-grey);
     --clr-primary-400: var(--clr-blue-dark);
 
-    --clr-accent-100: var(--clr-pink-light);
-    --clr-accent-200: var(--clr-pink);
-    --clr-accent-300: var(--clr-pink-dark);
-    --clr-accent-400: var(--clr-orange);
-    --clr-accent-500: var(--clr-blue-saturated);
-    --clr-accent-600: var(--clr-blue);
+    --clr-accent-100: var(--clr-pink-100);
+    --clr-accent-200: var(--clr-pink-200);
+    --clr-accent-300: var(--clr-pink-300);
+    --clr-accent-400: var(--clr-pink-400);
+    --clr-accent-500: var(--clr-orange);
+    --clr-accent-600: var(--clr-blue-saturated);
+    --clr-accent-700: var(--clr-blue);
 
     /* TYPOGRAPHY */
 
