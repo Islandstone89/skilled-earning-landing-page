@@ -197,6 +197,19 @@ body {
   font-weight: var(--fw-bold);
 }
 
+:is(.header, .main, .footer) {
+  --page-max-width: 80rem;
+  --page-inline-gutter: var(--size-200);
+  max-width: var(--page-max-width);
+  padding-inline: var(--page-inline-gutter);
+  margin-inline: auto;
+}
+@media (width > 45rem) {
+  :is(.header, .main, .footer) {
+    --page-inline-gutter: var(--size-500);
+  }
+}
+
 .heading {
   font-weight: var(--fw-extra-bold);
   color: var(--clr-primary-400);
@@ -234,7 +247,7 @@ body {
   gap: var(--size-800);
   padding-block: var(--size-600);
 }
-@media (width > 45rem) {
+@media (width > 40rem) {
   .hero {
     grid-template-columns: 1fr 1fr;
     padding-block: var(--size-800);

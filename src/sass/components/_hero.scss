@@ -6,7 +6,7 @@
     gap: var(--size-800);
     padding-block: var(--size-600);
 
-    @media (width > 45rem) {
+    @media (width > 40rem) {
         grid-template-columns: 1fr 1fr;
         padding-block: var(--size-800);
     }

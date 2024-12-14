@@ -8,6 +8,18 @@ body {
     font-weight: var(--fw-bold);
 }
 
+:is(.header, .main, .footer) {
+    --page-max-width: 80rem;
+    --page-inline-gutter: var(--size-200);
+    max-width: var(--page-max-width);
+    padding-inline: var(--page-inline-gutter);
+    margin-inline: auto;
+
+    @media (width > 45rem) {
+        --page-inline-gutter: var(--size-500);
+    }
+}
+
 .heading {
     font-weight: var(--fw-extra-bold);
     color: var(--clr-primary-400);
