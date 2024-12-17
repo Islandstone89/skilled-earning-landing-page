@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
   --clr-pink-200: hsl(341, 92%, 62%);
   --clr-pink-300: hsl(322, 87%, 55%);
   --clr-pink-400: hsl(322, 85%, 40%);
-  --clr-blue-saturated: hsl(234, 25%, 52%);
+  --clr-blue-saturated: hsl(234, 25%, 42%);
   --clr-blue: hsl(237, 100%, 64%);
   --clr-blue-dark: hsl(233, 54%, 16%);
   --clr-orange: hsl(13, 100%, 64%);
@@ -267,7 +267,7 @@ body {
   background: linear-gradient(180deg, var(--clr-accent-500), var(--clr-accent-300));
 }
 .hero-btn-link:is(:hover, :focus-visible) {
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .courses {
@@ -335,7 +335,7 @@ body {
   background: linear-gradient(180deg, var(--clr-accent-700), var(--clr-accent-300));
 }
 .footer-btn-link:is(:hover, :focus-visible) {
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=style.css.map */

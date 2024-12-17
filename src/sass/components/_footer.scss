@@ -12,6 +12,6 @@
     background: linear-gradient(180deg, var(--clr-accent-700), var(--clr-accent-300));
 
     &:is(:hover, :focus-visible) {
-        opacity: .5;
+        opacity: .9;
     }
 }
